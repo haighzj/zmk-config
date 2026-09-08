@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: petejohanson
-      url-base: https://github.com/petejohanson
     - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
   projects:
@@ -12,9 +10,9 @@ manifest:
       # Pinned to a validated ZMK main commit (2026-07-04) until ZMK tags v0.4.
       revision: 484a0547078228f6957ed164523823e39fbedec4
       import: app/west.yml
-    - name: chiptuner-zmk-module
-      remote: petejohanson
+    - name: zmk-fingerpunch-keyboards
+      remote: sadekbaroudi
       revision: main
+      import: config/deps.yml
   self:
     path: config
-    import: deps.yml
